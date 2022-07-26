@@ -128,7 +128,15 @@ html {
 
 /* nav toggler */
 .navbar-toggler:focus {
-    /* text-decoration: none; */
+
     outline: unset;
     box-shadow: unset;
+}
+
+#bg-main {
+
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(61, 8, 146, 0.73)),
+        url("../assets/images/bg-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
