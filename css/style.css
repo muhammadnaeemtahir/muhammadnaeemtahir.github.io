@@ -95,7 +95,7 @@ html {
 /* icons */
 .contact-icons .fa-brands:hover,
 .contact-icons .fa-solid:hover {
-    color: #fff !important;
+    color: rgba(255, 255, 255, 0.815) !important;
     transition: 0.5s ease-out;
 }
 
@@ -108,16 +108,6 @@ html {
     color: #fff;
 }
 
-@media(max-width: 789px) {
-    .navbar-nav .nav-link:hover {
-        border-bottom: unset;
-        padding-bottom: unset;
-    }
-
-    .welcome-section {
-        height: 35vh;
-    }
-}
 
 
 .btn-primary {
@@ -139,4 +129,37 @@ html {
         url("../assets/images/bg-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+
+@media(max-width: 789px) {
+    .navbar-nav .nav-link:hover {
+        border-bottom: unset;
+        padding-bottom: unset;
+    }
+
+    .welcome-section {
+        height: 35vh;
+    }
+
+    #bg-main h4 {
+        font-size: 0.9rem;
+        font-weight: unset !important;
+    }
+}
+
+
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 42px #2fa,
+        0 0 82px #2fa,
+        0 0 92px #2fa,
+        0 0 102px #2fa,
+        0 0 151px #2fa;
 }
