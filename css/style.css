@@ -1,11 +1,10 @@
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
+/* START: scrollbar */
+
 * {
     scrollbar-width: auto;
-    scrollbar-color: #d1cbd2 #ffffff;
+    scrollbar-color: #8f54a0 #ffffff;
 }
 
-/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 10px;
 }
@@ -15,11 +14,28 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #ccc;
+    background-color: var(--primary-color);
     border-radius: 10px;
-    /* border: 3px solid #ffffff; */
+    border: 3px solid #ffffff;
 }
 
+/* END: scrollbar */
+
+
+
+/* START: animcations */
+#loading {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 99999;
+}
+
+/* END:animcations */
 
 /* css default */
 body {
@@ -148,8 +164,6 @@ html {
         font-weight: unset !important;
     }
 }
-
-
 
 .neonText {
     color: #fff;

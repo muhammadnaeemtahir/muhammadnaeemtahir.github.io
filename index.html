@@ -46,6 +46,10 @@
 </head>
 
 <body>
+    <!-- loading animcation -->
+    <div id="loading"></div>
+
+
     <!-- header -->
     <header id="home">
         <nav class="navbar navbar-expand-md bg-primary fixed-top">
@@ -65,7 +69,7 @@
                             <a class="nav-link fs-5 fw-bold text-white" href="#about">About</a>
                         </li>
                         <li class="nav-item mx-md-3">
-                            <a class="nav-link fs-5 fw-bold text-white" href="#portfolio">Portfolio</a>
+                            <a class="nav-link fs-5 fw-bold text-white" href="./views/project.html">Portfolio</a>
                         </li>
                         <li class="nav-item mx-md-3">
                             <a class="nav-link fs-5 fw-bold text-white" href="#contact">Contact</a>
@@ -211,64 +215,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="./assets/images/ssdistro.PNG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text text-center">
-                                    <span class="mx-1 bg-primary badge rounded-pill">JS</span>
-                                    <span class="mx-1 bg-primary badge rounded-pill">SASS</span>
-                                    <span class="mx-1 bg-primary badge rounded-pill">Bootstrap</span>
-                                    <span class="mx-1 bg-primary badge rounded-pill">Laravel</span>
-                                </p>
-                                <h3 class="text-center">SINFONIASUBLIME</h3>
-                                <div class="text-center">
-                                    <a href="https://ssdistro.com/login" target="_blank"
-                                        class="btn btn-warning rounded-pill px-5 py-1">View <i
-                                            class="ms-3 fa-solid fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="./assets/images/storedash.PNG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text text-center">
-                                    <span class="mx-1 bg-primary badge rounded-pill">JavaScript</span>
-                                    <span class="mx-1 bg-primary badge rounded-pill">Bootstrap</span>
-                                    <span class="mx-1 bg-primary badge rounded-pill">Laravel</span>
-                                </p>
-                                <h3 class="text-center">STOREDASH</h3>
-                                <div class="text-center">
-                                    <a href="http://sdv2.etradeverse.com/super_admin" target="_blank"
-                                        class="btn btn-warning rounded-pill px-5 py-1">View <i
-                                            class="ms-3 fa-solid fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="./assets/images/hotel-point.PNG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text text-center">
-                                    <span class="mx-1 bg-primary badge rounded-pill">JavaScript</span>
-                                    <span class="mx-1 bg-primary badge rounded-pill">Bootstrap</span>
-                                    <span class="mx-1 bg-primary badge rounded-pill">ReactJS</span>
-                                </p>
-                                <h3 class="text-center">Hotel Point</h3>
-                                <div class="text-center">
-                                    <a href="https://hotelpoint.techrepublica.com/login" target="_blank"
-                                        class="btn btn-warning rounded-pill px-5 py-1">View <i
-                                            class="ms-3 fa-solid fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="text-center">
-                    <button class="btn btn-outline-dark border-0 rounded-0" type="button">Many More</button>
+                    <a href="./views/project.html" class="btn btn-outline-dark border-0 rounded-0">More</a>
                 </div>
             </div>
         </main>
@@ -331,6 +280,24 @@
 
 
 
+
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
+        integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        bodymovin.loadAnimation({
+            container: document.getElementById('loading'),
+            path: 'js/loading.json'
+        });
+
+        window.addEventListener('load', () => {
+            document.getElementById('loading').remove();
+        });
+    </script>
 
 </body>
 
