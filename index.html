@@ -295,7 +295,9 @@
         });
 
         window.addEventListener('load', () => {
-            document.getElementById('loading').remove();
+            setTimeout(function () {
+                document.getElementById('loading').remove();
+            }, 2000);
         });
     </script>
 
