@@ -58,7 +58,6 @@
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars-staggered text-white"></i>
-                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -73,6 +72,9 @@
                         </li>
                         <li class="nav-item mx-md-3">
                             <a class="nav-link fs-5 fw-bold text-white" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item mx-md-3">
+                            <a class="nav-link fs-5 fw-bold text-white" href="./views/moocs.html">MOOCs</a>
                         </li>
                     </ul>
                 </div>
@@ -295,9 +297,7 @@
         });
 
         window.addEventListener('load', () => {
-            setTimeout(function () {
-                document.getElementById('loading').remove();
-            }, 3000);
+            document.getElementById('loading').remove();
         });
     </script>
 
