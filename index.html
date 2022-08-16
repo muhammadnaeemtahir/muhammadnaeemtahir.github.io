@@ -43,6 +43,11 @@
 
     <!-- custom js -->
     <script src="./js/script.js" defer></script>
+
+    <!-- START AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END AOS -->
 </head>
 
 <body>
@@ -84,7 +89,8 @@
 
     <!-- welcome-section -->
     <section id="bg-main">
-        <div class="welcome-section d-flex justify-content-center align-items-center flex-column text-white">
+        <div class="welcome-section d-flex justify-content-center align-items-center flex-column text-white"
+            data-aos="fade-up" data-aos-duration="1000">
             <h1 class="mt-5 fa">Hey, I am <br class="d-md-none d-block"> Mohammad Naeem Tahir</h1>
             <h4 class="fw-bold text-center">I design user interfaces & develop websites.</h4>
         </div>
@@ -96,9 +102,9 @@
             <h2 class="text-white text-center mb-3">
                 About me
             </h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card my-md-0 my-3">
+            <div class="row align-items-center">
+                <div class="col-md-3" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card shadow-lg my-md-0 my-3">
                         <img src="./assets/images/mohammad-naeem-tahir.png" class="card-img-top bg-gradient"
                             alt="mohammad naeem tahir">
                         <div class="card-body">
@@ -108,15 +114,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md" id="about-content">
-                    <p class="text-white text-justify">My name is Mohammad Naeem Tahir and I am, foremost, a Muslim.
-                        I
-                        am also a
-                        web developer
-                        by <br class="d-none d-md-block"> profession, a designer in
-                        my free time and a perpetual student.</p>
+                <div class="col-md" id="about-content" data-aos="fade-left" data-aos-duration="1000">
+                    <p class="text-white text-justify">My name is Mohammad Naeem Tahir, a
+                        web developer. As an undergraduate student I am keen to participate in excellent opportunities
+                        to
+                        get professional and connection building exposure. Aiming to leverage my
+                        skills to provide quality services.</p>
                     <p class="text-white">You can download my resume from here:
-                        
+
                         <a href="./assets/docs/mohammad-naeem-tahir-resume.pdf" download
                             class="text-decoration-none text-muted">Mohammad Naeem Tahir (CV)</a>
                     </p>
@@ -135,13 +140,13 @@
     </div>
     <div class="bg-secondary pt-md-5" id="portfolio">
         <main class="container py-5">
-            <h2 class="text-white text-center mb-5">
+            <h2 class="text-white text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
                 These are some of my projects
             </h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card shadow-lg">
                             <img src="./assets/images/project-m.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">
@@ -158,8 +163,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card shadow-lg">
                             <img src="./assets/images/capital-city.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">
@@ -176,8 +181,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="card shadow-lg">
                             <img src="./assets/images/invoice-generator.PNG" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text text-center">
@@ -207,7 +212,7 @@
         <div class="bg-dark" id="contact">
             <div class="py-5 container">
                 <div class="row">
-                    <div class="col-md">
+                    <div class="col-md" data-aos="fade-right" data-aos-duration="1000">
                         <h2 class="text-white text-center my-md-5">
                             Let's Work Togeather
                         </h2>
@@ -234,7 +239,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md text-center mt-4">
+                    <div class="col-md text-center mt-4" data-aos="fade-left" data-aos-duration="1000">
                         <a class="twitter-timeline shadow-lg" data-lang="en" data-width="400" data-height="350"
                             data-theme="dark" href="https://twitter.com/m_naeemtahir?ref_src=twsrc%5Etfw"
                             target="_blank">See my tweets
@@ -277,6 +282,12 @@
             document.getElementById('loading').remove();
         });
     </script>
+
+    <!-- START AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- END: AOS -->
 
 </body>
 

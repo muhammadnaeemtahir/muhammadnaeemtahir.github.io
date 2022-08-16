@@ -40,6 +40,7 @@
 /* css default */
 body {
     background-color: #ccc;
+    overflow-x: hidden;
 }
 
 h1,
@@ -106,6 +107,16 @@ html {
 
 .card:hover {
     transition: transform 0.3s ease-out !important;
+    transform: scale(1.03);
+}
+
+.card {
+    border-radius: 25px !important;
+}
+
+.card img {
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
 }
 
 /* icons */
