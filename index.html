@@ -43,11 +43,6 @@
 
     <!-- custom js -->
     <script src="./js/script.js" defer></script>
-
-    <!-- START AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- END AOS -->
 </head>
 
 <body>
@@ -62,7 +57,7 @@
                 <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars-staggered text-white"></i>
+                    <i class="fa-solid fa-bars text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -89,10 +84,12 @@
 
     <!-- welcome-section -->
     <section id="bg-main">
-        <div class="welcome-section d-flex justify-content-center align-items-center flex-column text-white"
-            data-aos="fade-up" data-aos-duration="1000">
+        <div class="welcome-section d-flex justify-content-center align-items-center flex-column text-white">
             <h1 class="mt-5 fa">Hey, I am <br class="d-md-none d-block"> Mohammad Naeem Tahir</h1>
             <h4 class="fw-bold text-center">I design user interfaces & develop websites.</h4>
+            <div class="text-center">
+                <a href="/views/project.html" class="btn btn-outline-light">Portfolio</a>
+            </div>
         </div>
     </section>
 
@@ -103,7 +100,7 @@
                 About me
             </h2>
             <div class="row align-items-center">
-                <div class="col-md-3" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-md-3">
                     <div class="card shadow-lg my-md-0 my-3">
                         <img src="./assets/images/mohammad-naeem-tahir.png" class="card-img-top bg-gradient"
                             alt="mohammad naeem tahir">
@@ -140,12 +137,12 @@
     </div>
     <div class="bg-secondary pt-md-5" id="portfolio">
         <main class="container py-5">
-            <h2 class="text-white text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="text-white text-center mb-5">
                 These are some of my projects
             </h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-md-4 mb-4">
                         <div class="card shadow-lg">
                             <img src="./assets/images/project-m.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -163,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="col-md-4 mb-4">
                         <div class="card shadow-lg">
                             <img src="./assets/images/capital-city.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -181,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-md-4 mb-4">
                         <div class="card shadow-lg">
                             <img src="./assets/images/invoice-generator.PNG" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -212,13 +209,13 @@
         <div class="bg-dark" id="contact">
             <div class="py-5 container">
                 <div class="row">
-                    <div class="col-md" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-md">
                         <h2 class="text-white text-center my-md-5">
                             Let's Work Togeather
                         </h2>
                         <div class="text-center contact-icons my-5">
                             <a class="mx-3 text-decoration-none"
-                                href="https://wa.me/923060705087?text=Hello%2C%20I%20have%20a%20question%20about%20your%20service.%20Can%20you%20help%20me%3F"
+                                href="https://wa.me/923184133228?text=Hello%2C%20how%20may%20I%20help%20you%3F"
                                 target="_blank">
                                 <i class="fa-brands neonText fa-whatsapp fs-2 text-muted"></i>
                             </a>
@@ -239,7 +236,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md text-center mt-4" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="col-md text-center mt-4">
                         <a class="twitter-timeline shadow-lg" data-lang="en" data-width="400" data-height="350"
                             data-theme="dark" href="https://twitter.com/m_naeemtahir?ref_src=twsrc%5Etfw"
                             target="_blank">See my tweets
@@ -282,12 +279,6 @@
             document.getElementById('loading').remove();
         });
     </script>
-
-    <!-- START AOS -->
-    <script>
-        AOS.init();
-    </script>
-    <!-- END: AOS -->
 
 </body>
 
