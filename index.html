@@ -24,6 +24,10 @@
 </head>
 
 <body id="page-top">
+
+    <!-- loading animation -->
+    <div id="loading-animation" class="loading-animation"></div>
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -182,7 +186,8 @@
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Muhammad Naeem Tahir | No copyrights reserved.</div>
+            <div class="small text-center text-muted">Made with ❤️ by Muhammad Naeem Tahir | No copyrights reserved.
+            </div>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
@@ -196,6 +201,23 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <!-- cdn bodymovin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
+        integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // animation file loaded and removed after content load
+        bodymovin.loadAnimation({
+            container: document.getElementById('loading-animation'),
+            path: 'assets/JSONanimations/DEV.json'
+        });
+
+        window.addEventListener('load', () => {
+            document.getElementById('loading-animation').remove();
+        });
+    </script>
 </body>
 
 </html>
