@@ -12473,9 +12473,15 @@ header.masthead .h1 {
   opacity: 1;
 }
 
+
+.cards .card:hover {
+  transition: transform .3s ease;
+  cursor: grab;
+}
+
 .cards .card:hover {
   transform: scale(1.01);
-  cursor: grab;
+  box-shadow: 0 0.125rem 1rem rgb(0 0 0 / 8%) !important;
 }
 
 .loading-animation {
