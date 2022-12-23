@@ -18,7 +18,7 @@ $(function () {
             var src = item["thumbnail"]; // use thumbnail url
             display += `<img src="${src}" class="card-img-top" alt="${item.title}">`;
             display += `<div class="card-body">`;
-            display += `<h5 class="card-title"><a class="text-decoration-none" href="${item.link}">${item.title}</a></h5>`;
+            display += `<h5 class="card-title"><a class="text-decoration-none text-dark" href="${item.link}">${item.title}</a></h5>`;
             var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
             yourString = yourString.replace("h4", "p");
             yourString = yourString.replace("h3", "p");
@@ -32,7 +32,7 @@ $(function () {
             );
             display += `<p class="card-text">${trimmedString}...</p>`;
 
-            display += `<a href="${item.link}" target="_blank" class="text-decoration-none text-muted" >Read More</a>`;
+            display += `<small><a href="${item.link}" target="_blank" class="text-decoration-none text-muted" >Read More</a></small>`;
             display += "</div></div>";
             return k < 10;
           });
