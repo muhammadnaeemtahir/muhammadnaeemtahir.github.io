@@ -17,7 +17,7 @@ $(function () {
             display += `<div class="col-md-3">`;
             display += `<div class="card h-100 mb-3" style="height: auto;">`;
             var src = item["thumbnail"]; // use thumbnail url
-            display += `<img src="${src}" class="card-img-top img-fluid w-100" alt="${item.title}">`;
+            display += `<img src="${src}" class="card-img-top img-fluid" alt="${item.title}">`;
             display += `<div class="card-body">`;
             display += `<h5 class="card-title"><a class="text-decoration-none text-dark" href="${item.link}">${item.title}</a></h5>`;
             var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
