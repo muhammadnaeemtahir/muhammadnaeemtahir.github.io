@@ -28,9 +28,6 @@
 
 <body id="page-top">
 
-    <!-- loading animation -->
-    <div id="loading-animation" class="loading-animation"></div>
-
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -52,6 +49,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Masthead-->
     <header class="masthead" id="home">
         <div class="container px-4 px-lg-5 h-100">
@@ -61,8 +59,7 @@
                     <hr class="divider d-md-block d-none" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white mb-5">React Developer | Web Application Developer
-                    </p>
+                    <p class="text-white mb-5">Frontend Developer | React, Tailwind, CMS</p>
                     <div class="text-center">
                         <a href="https://www.linkedin.com/in/muhammadnaeemtahir/" target="_blank"
                             class="text-light mx-1 text-decoration-none">
@@ -73,19 +70,11 @@
                             <i class=" bi bi-github fs-3"></i>
                         </a>
                     </div>
-                    <div class="text-center my-3">
-                        <a href="./blog/blog.html" class="fw-bold" id="glowing-button">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Read My Blogs
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
+
     <!-- About-->
     <section class="page-section bg-primary" id="about">
         <div class="container px-4 px-lg-5">
@@ -102,6 +91,7 @@
             </div>
         </div>
     </section>
+
     <!-- Portfolio-->
     <div id="portfolio" class="cards">
         <div class="container-fluid p-0">
@@ -173,6 +163,7 @@
             </div>
         </div>
     </div>
+
     <!-- Call to action-->
     <section class="py-md-5 py-3 bg-dark text-white" id="contact">
         <div class="container px-4 px-lg-5">
@@ -189,14 +180,9 @@
                     <i class=" fa-brands fa-whatsapp fs-3"></i>
                 </a>
             </div>
-            <hr class="divider" />
-            <div class="card rounded-0 border-0 p-0">
-                <a class="twitter-timeline" href="https://twitter.com/m_naeemtahir?ref_src=twsrc%5Etfw">Tweets by
-                    m_naeemtahir</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
         </div>
     </section>
+
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
@@ -204,6 +190,7 @@
             </div>
         </div>
     </footer>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
@@ -220,18 +207,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
         integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        // animation file loaded and removed after content load
-        bodymovin.loadAnimation({
-            container: document.getElementById('loading-animation'),
-            path: 'assets/JSONanimations/DEV.json'
-        });
-
-        window.addEventListener('load', () => {
-            document.getElementById('loading-animation').remove();
-        });
-    </script>
 </body>
 
 </html>
