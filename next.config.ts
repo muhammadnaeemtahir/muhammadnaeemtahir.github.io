@@ -1,19 +1,9 @@
-
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  trailingSlash: true,
-
-  images: {
-    unoptimized: true,
-  },
-
-  basePath: "",
-
+  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
-
   turbopack: {
     rules: {
       "*.css": {
