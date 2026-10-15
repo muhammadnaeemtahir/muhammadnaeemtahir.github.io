@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
 const nextConfig: NextConfig = {
+  output: 'export',
+  basePath:"",
+  assetPrefix:"assetPrefix",
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
@@ -14,4 +18,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
