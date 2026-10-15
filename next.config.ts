@@ -1,21 +1,13 @@
+
 import type { NextConfig } from "next";
-/** @type {import('next').NextConfig} */
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath:"",
-  assetPrefix:"assetPrefix",
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+  output: "export",
+  trailingSlash: true,
+
+  images: {
+    unoptimized: true,
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
